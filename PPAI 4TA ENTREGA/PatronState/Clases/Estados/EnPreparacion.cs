@@ -11,7 +11,11 @@ namespace PatronState.Clases
         private string ambito;
         private string nombre;
 
-        
+        public EnPreparacion()
+        {
+            this.ambito = "DetalleDePedido";
+            this.nombre = "EnPreparacion";
+        }
 
         public override void buscarHistoriaActual()
         {
