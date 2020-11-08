@@ -59,15 +59,15 @@
     <Compile Include="Clases\Estados\Servido.cs" />
     <Compile Include="Clases\Mesa.cs" />
     <Compile Include="Clases\Pedido.cs" />
-    <Compile Include="FormTablaFacu.cs">
+    <Compile Include="Formularios\FormTablaFacu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTablaFacu.Designer.cs">
+    <Compile Include="Formularios\FormTablaFacu.Designer.cs">
       <DependentUpon>FormTablaFacu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormTablaFacu.resx">
+    <EmbeddedResource Include="Formularios\FormTablaFacu.resx">
       <DependentUpon>FormTablaFacu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
