@@ -14,9 +14,12 @@ namespace PatronState
 {
     public partial class FinalizarPedido : Form
     {
+        Basededatos basededatos = new Basededatos();
+
         public FinalizarPedido()
         {
             InitializeComponent();
+            basededatos.Cargar1();
         }
 
         private void cargar_grilla(Pedido pedido)
@@ -37,7 +40,7 @@ namespace PatronState
 
         private void cargar_grilla()
         {
-            List<Pedido> pedido = obtenerPedidos();
+            List<Pedido> pedido = basededatos.valores;
             tablaPedidos.Rows.Clear();
             for (int y = 0; y < pedido.Count(); y++)
                 for (int i = 0; i < pedido[y].Productos.Count; i++)
@@ -53,12 +56,7 @@ namespace PatronState
 
         }
 
-        private List<Pedido> obtenerPedidos()
-        {
-            Basededatos<Pedido> bd = new Basededatos<Pedido>("../../persistencia/bd_pedidos.json");
-            bd.Cargar();
-            return bd.valores;
-        }
+
 
         private void Form1_Load(object sender, EventArgs e)
         {

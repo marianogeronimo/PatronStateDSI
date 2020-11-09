@@ -4,53 +4,50 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 
 namespace PatronState.Clases
 {
-    class Basededatos<T>
+    class Basededatos
     {
-        public List<T> valores = new List<T>();
-        public string ruta;
+        public List<Pedido> valores = new List<Pedido>();
 
-        public Basededatos(string r)
+
+        public void Cargar1()
         {
-            ruta = r;
+            // clases iniciales
+            // pedido1
+            DetallePedido hamburguesa = new DetallePedido("Hamburguesa", 1, 200, false);
+            DetallePedido lomito = new DetallePedido("Lomito de Ternera", 1, 300, false);
+
+            Mesa mesa12 = new Mesa(12, 2, "Seccion 1", "Facundo");
+
+            List<DetallePedido> productos = new List<DetallePedido>();
+            productos.Add(hamburguesa);
+            productos.Add(lomito);
+
+            Pedido pedido1 = new Pedido(1, DateTime.Now, mesa12, productos);
+
+            //pedido2
+
+
+            //final
+            valores.Add(pedido1);
         }
 
-        public void Guardar()
+        public List<Pedido> Cargar()
         {
-            string texto = JsonConvert.SerializeObject(valores, Formatting.Indented);
-            File.WriteAllText(ruta, texto);
+            //if(opcion == 1) {return valores.OrderBy()}
+            return valores;
         }
 
-        public void Cargar()
-        {
-            try
-            {
-                string archivo = File.ReadAllText(ruta);
-                valores = JsonConvert.DeserializeObject<List<T>>(archivo);
-            }
-            catch (Exception) { }
-        }
 
-        public void Insertar(T nuevo)
-        {
-            valores.Add(nuevo);
-            Guardar();
-        }
-
-        public List<T> Buscar(Func<T, bool> criterio)
+        public List<Pedido> Buscar(Func<Pedido, bool> criterio)
         {
             return valores.Where(criterio).ToList();
         }
 
-        public void Eliminar(Func<T, bool> criterio)
-        {
-            valores = valores.Where(x => !criterio(x)).ToList();
-        }
 
-        public void Actualizar(Func<T, bool> criterio, T nuevo)
+        public void Actualizar(Func<Pedido, bool> criterio, Pedido nuevo)
         {
             valores = valores.Select(x =>
             {
