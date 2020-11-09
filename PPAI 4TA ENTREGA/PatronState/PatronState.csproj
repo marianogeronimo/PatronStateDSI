@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2BF3D8A-D5D9-4389-B765-9651DE52A0C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PatronState</RootNamespace>
+    <AssemblyName>WindowsFormsApp2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\BaseDeDatos.cs" />
+    <Compile Include="Clases\DetallePedido.cs" />
+    <Compile Include="Clases\Estado.cs" />
+    <Compile Include="Clases\Estados\Cancelado.cs" />
+    <Compile Include="Clases\Estados\EnPreparacion.cs" />
+    <Compile Include="Clases\Estados\ListoParaServir.cs" />
+    <Compile Include="Clases\Estados\Notificado.cs" />
+    <Compile Include="Clases\Estados\PedienteDePreparacion.cs" />
+    <Compile Include="Clases\Estados\Servido.cs" />
+    <Compile Include="Clases\HistorialEstado.cs" />
+    <Compile Include="Clases\Mesa.cs" />
+    <Compile Include="Clases\Pedido.cs" />
+    <Compile Include="Formularios\ConfirmarFinalizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ConfirmarFinalizacion.Designer.cs">
+      <DependentUpon>ConfirmarFinalizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FinalizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FinalizarPedido.Designer.cs">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ConfirmarFinalizacion.resx">
+      <DependentUpon>ConfirmarFinalizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FinalizarPedido.resx">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deseleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\si.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deseleccionar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\detalle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-de-perfil.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
