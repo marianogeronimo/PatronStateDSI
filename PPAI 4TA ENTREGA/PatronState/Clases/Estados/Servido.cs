@@ -11,10 +11,10 @@ namespace PatronState.Clases
         private string ambito;
         private string nombre;
 
-        public Servido(string ambito, string nombre)
+        public Servido()
         {
-            this.ambito = ambito;
-            this.nombre = nombre;
+            this.ambito = "DetalleDePedido";
+            this.nombre = this.GetType().Name;
         }
 
         public override bool esServido()

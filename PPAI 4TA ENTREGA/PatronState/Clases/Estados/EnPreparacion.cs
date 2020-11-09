@@ -14,7 +14,7 @@ namespace PatronState.Clases
         public EnPreparacion()
         {
             this.ambito = "DetalleDePedido";
-            this.nombre = "EnPreparacion";
+            this.nombre = this.GetType().Name;
         }
 
         public override void buscarHistoriaActual()
@@ -27,14 +27,15 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void crearProximoEstado()
+        public override Estado crearProximoEstado()
         {
-            throw new NotImplementedException();
+            Estado estadoNuevo = new ListoParaServir();
+            return estadoNuevo;
         }
 
         public override bool esEnPreparacion()
         {
-            throw new NotImplementedException();
+            return true;
         }
         
         public override void finalizarPreparacion()

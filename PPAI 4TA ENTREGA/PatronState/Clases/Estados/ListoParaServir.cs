@@ -11,10 +11,10 @@ namespace PatronState.Clases
         private string ambito;
         private string nombre;
 
-        public ListoParaServir(string ambito, string nombre)
+        public ListoParaServir()
         {
-            this.ambito = ambito;
-            this.nombre = nombre;
+            this.ambito = "DetalleDePedido";
+            this.nombre = this.GetType().Name;
         }
 
         public override void buscarHistoriaActual()
@@ -27,9 +27,10 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void crearProximoEstado()
+        public override Estado crearProximoEstado()
         {
-            throw new NotImplementedException();
+            Estado estadoNuevo = new Notificado();
+            return estadoNuevo;
         }
 
         public override bool esPendienteDeServir()

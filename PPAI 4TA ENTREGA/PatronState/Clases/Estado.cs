@@ -9,7 +9,7 @@
         public abstract void buscarHistoriaActual();
         public abstract void cancelar();
         public abstract void crearHistorialEstado();
-        public abstract void crearProximoEstado();
+        public abstract Estado crearProximoEstado();
         public abstract bool esCancelado();
         public abstract bool esEnPreparacion();
         public abstract bool esNotificado();
@@ -22,7 +22,7 @@
         public abstract void notificar();
         public abstract void preparar();
         public abstract void servir();
-        //new() supongo que ya esta incluido
+        //new() supongo que ya esta incluido - en realidad creo que no podria por ser abstracto
 
 
     }
