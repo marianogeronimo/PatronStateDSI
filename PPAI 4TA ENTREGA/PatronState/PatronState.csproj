@@ -61,31 +61,49 @@
     <Compile Include="Clases\HistorialEstado.cs" />
     <Compile Include="Clases\Mesa.cs" />
     <Compile Include="Clases\Pedido.cs" />
-    <Compile Include="Formularios\FormTabla.cs">
+    <Compile Include="Formularios\ConfirmarFinalizacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\FormTabla.Designer.cs">
-      <DependentUpon>FormTabla.cs</DependentUpon>
+    <Compile Include="Formularios\ConfirmarFinalizacion.Designer.cs">
+      <DependentUpon>ConfirmarFinalizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FinalizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FinalizarPedido.Designer.cs">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Pedidos.Designer.cs">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Formularios\FormTabla.resx">
-      <DependentUpon>FormTabla.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\ConfirmarFinalizacion.resx">
+      <DependentUpon>ConfirmarFinalizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FinalizarPedido.resx">
+      <DependentUpon>FinalizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Pedidos.resx">
+      <DependentUpon>Pedidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -94,6 +112,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deseleccionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\si.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

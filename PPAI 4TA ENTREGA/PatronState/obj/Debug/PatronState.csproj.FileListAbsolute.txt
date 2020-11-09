@@ -1,0 +1,6 @@
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csprojAssemblyReference.cache
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.frmFinalizarPedido.resources
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.GenerateResource.cache
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.Formularios.ConfirmarFinalizacion.resources
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.FinalizarPedido.resources
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.Formularios.Pedidos.resources
