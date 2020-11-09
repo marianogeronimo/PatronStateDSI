@@ -120,9 +120,6 @@
     <None Include="Resources\fondo1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\deseleccionar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\si.png" />
   </ItemGroup>
   <ItemGroup>

@@ -55,7 +55,7 @@ namespace PatronState
 
         private List<Pedido> obtenerPedidos()
         {
-            Basededatos<Pedido> bd = new Basededatos<Pedido>("./persistencia/bd_pedidos");
+            Basededatos<Pedido> bd = new Basededatos<Pedido>("../../persistencia/bd_pedidos.json");
             bd.Cargar();
             return bd.valores;
         }
