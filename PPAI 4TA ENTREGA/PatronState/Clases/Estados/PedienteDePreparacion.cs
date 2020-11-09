@@ -43,12 +43,12 @@ namespace PatronState.Clases
         }
 
         //Metodos que no implementa
-        public override void buscarHistoriaActual()
+        public override HistorialEstado buscarHistoriaActual()
         {
             throw new NotImplementedException();
         }
 
-        public override void crearHistorialEstado()
+        public override HistorialEstado crearHistorialEstado()
         {
             throw new NotImplementedException();
         }

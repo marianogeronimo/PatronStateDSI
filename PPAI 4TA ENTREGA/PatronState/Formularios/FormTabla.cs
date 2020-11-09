@@ -34,6 +34,30 @@ namespace PatronState
 
         }
 
+        private void cargar_grilla()
+        {
+            List<Pedido> pedido = obtenerPedidos();
+            dgv1.Rows.Clear();
+            for (int y = 0; y < pedido.Count(); y++)
+                for (int i = 0; i < pedido[y].Productos.Count; i++)
+                {
+                    dgv1.Rows.Add();
+                    dgv1.Rows[i].Cells[0].Value = pedido[y].Productos[i].NombreProducto;
+                    dgv1.Rows[i].Cells[1].Value = pedido[y].Productos[i].EsMenu;
+                    dgv1.Rows[i].Cells[2].Value = pedido[y].Productos[i].Cantidad;
+                    dgv1.Rows[i].Cells[3].Value = pedido[y].Mesa.NumeroMesa;
+                    dgv1.Rows[i].Cells[4].Value = pedido[y].Mesa.NombreSeccion;
+                    dgv1.Rows[i].Cells[5].Value = pedido[y].Mesa.NombreMozo;
+                }
+
+        }
+
+        private List<Pedido> obtenerPedidos()
+        {
+            Basededatos<Pedido> bd = new Clases.Basededatos<Pedido>("./persistencia/bd_pedidos");
+            bd.Cargar();
+            return bd.valores;
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {

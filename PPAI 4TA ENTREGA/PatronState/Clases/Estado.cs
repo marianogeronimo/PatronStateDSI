@@ -6,9 +6,9 @@
         string nombre;
 
        
-        public abstract void buscarHistoriaActual();
+        public abstract HistorialEstado buscarHistoriaActual();
         public abstract void cancelar();
-        public abstract void crearHistorialEstado();
+        public abstract HistorialEstado crearHistorialEstado();
         public abstract Estado crearProximoEstado();
         public abstract bool esCancelado();
         public abstract bool esEnPreparacion();

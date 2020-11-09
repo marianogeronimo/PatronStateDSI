@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{F2BF3D8A-D5D9-4389-B765-9651DE52A0C6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormsApp2</RootNamespace>
+    <RootNamespace>PatronState</RootNamespace>
     <AssemblyName>WindowsFormsApp2</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -58,6 +58,7 @@
     <Compile Include="Clases\Estados\Notificado.cs" />
     <Compile Include="Clases\Estados\PedienteDePreparacion.cs" />
     <Compile Include="Clases\Estados\Servido.cs" />
+    <Compile Include="Clases\HistorialEstado.cs" />
     <Compile Include="Clases\Mesa.cs" />
     <Compile Include="Clases\Pedido.cs" />
     <Compile Include="Formularios\FormTabla.cs">

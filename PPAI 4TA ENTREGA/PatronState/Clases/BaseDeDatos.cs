@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace WindowsFormsApp2.Clases
+namespace PatronState.Clases
 {
     class Basededatos<T>
     {

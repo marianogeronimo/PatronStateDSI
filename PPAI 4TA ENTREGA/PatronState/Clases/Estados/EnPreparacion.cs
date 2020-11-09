@@ -17,12 +17,12 @@ namespace PatronState.Clases
             this.nombre = this.GetType().Name;
         }
 
-        public override void buscarHistoriaActual()
+        public override HistorialEstado buscarHistoriaActual()
         {
             throw new NotImplementedException();
         }
 
-        public override void crearHistorialEstado()
+        public override HistorialEstado crearHistorialEstado()
         {
             throw new NotImplementedException();
         }
