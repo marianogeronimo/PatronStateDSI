@@ -20,7 +20,7 @@ namespace PatronState.Clases
 
         public void Guardar()
         {
-            string texto = JsonConvert.SerializeObject(valores);
+            string texto = JsonConvert.SerializeObject(valores, Formatting.Indented);
             File.WriteAllText(ruta, texto);
         }
 

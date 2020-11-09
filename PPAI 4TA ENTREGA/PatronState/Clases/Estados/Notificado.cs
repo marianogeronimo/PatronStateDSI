@@ -8,8 +8,6 @@ namespace PatronState.Clases
 {
     class Notificado : Estado
     {
-        private string ambito;
-        private string nombre;
 
         public Notificado()
         {

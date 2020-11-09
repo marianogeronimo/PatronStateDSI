@@ -31,6 +31,6 @@ namespace PatronState.Clases
         public float PrecioUnitario { get => precioUnitario; set => precioUnitario = value; }
         public float PrecioTotal { get => precioTotal; set => precioTotal = value; }
         public bool EsMenu { get => esMenu; set => esMenu = value; }
-        internal Estado Estado { get => estado; set => estado = value; }
+        public Estado Estado { get => estado; set => estado = value; }
     }
 }

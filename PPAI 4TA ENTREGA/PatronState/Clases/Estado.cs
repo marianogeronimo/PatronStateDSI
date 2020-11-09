@@ -2,10 +2,12 @@
 {
     abstract class Estado
     {
-        string ambito;
-        string nombre;
+        internal string ambito;
+        internal string nombre;
 
-       
+        public string Ambito { get => ambito; set => ambito = value; }
+        public string Nombre { get => nombre; set => nombre = value; }
+
         public abstract HistorialEstado buscarHistoriaActual();
         public abstract void cancelar();
         public abstract HistorialEstado crearHistorialEstado();

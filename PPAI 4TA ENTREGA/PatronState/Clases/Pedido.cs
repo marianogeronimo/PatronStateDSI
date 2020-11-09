@@ -24,7 +24,7 @@ namespace PatronState.Clases
 
         public int NumeroPedido { get => numeroPedido; set => numeroPedido = value; }
         public DateTime FechaHoraPedido { get => fechaHoraPedido; set => fechaHoraPedido = value; }
-        internal List<DetallePedido> Productos { get => productos; set => productos = value; }
-        internal Mesa Mesa { get => mesa; set => mesa = value; }
+        public List<DetallePedido> Productos { get => productos; set => productos = value; }
+        public Mesa Mesa { get => mesa; set => mesa = value; }
     }
 }

@@ -8,8 +8,6 @@ namespace PatronState.Clases
 {
     class ListoParaServir : Estado
     {
-        private string ambito;
-        private string nombre;
 
         public ListoParaServir()
         {

@@ -8,8 +8,6 @@ namespace PatronState.Clases
 {
     class PedienteDePreparacion : Estado
     {
-        private string ambito;
-        private string nombre;
 
         public PedienteDePreparacion()
         {
