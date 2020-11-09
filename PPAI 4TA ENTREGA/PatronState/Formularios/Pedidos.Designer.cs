@@ -63,11 +63,10 @@
             this.mesa,
             this.seccion,
             this.mozo});
-            this.tablaPedidos.Location = new System.Drawing.Point(13, 59);
-            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4);
+            this.tablaPedidos.Location = new System.Drawing.Point(10, 48);
             this.tablaPedidos.Name = "tablaPedidos";
             this.tablaPedidos.ReadOnly = true;
-            this.tablaPedidos.Size = new System.Drawing.Size(1050, 533);
+            this.tablaPedidos.Size = new System.Drawing.Size(971, 433);
             this.tablaPedidos.TabIndex = 1;
             // 
             // producto
@@ -118,7 +117,8 @@
             this.usuarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1086, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(997, 24);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -127,13 +127,13 @@
             this.asdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asddasToolStripMenuItem});
             this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
-            this.asdToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.asdToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.asdToolStripMenuItem.Text = "Inicio";
             // 
             // asddasToolStripMenuItem
             // 
             this.asddasToolStripMenuItem.Name = "asddasToolStripMenuItem";
-            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
+            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.asddasToolStripMenuItem.Text = "asddas";
             // 
             // dsaToolStripMenuItem
@@ -143,7 +143,7 @@
             this.mesasToolStripMenuItem,
             this.mozosToolStripMenuItem});
             this.dsaToolStripMenuItem.Name = "dsaToolStripMenuItem";
-            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.dsaToolStripMenuItem.Text = "Restaurante";
             // 
             // pedidosToolStripMenuItem
@@ -151,47 +151,49 @@
             this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.finalizarPedidosToolStripMenuItem});
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             // 
             // finalizarPedidosToolStripMenuItem
             // 
             this.finalizarPedidosToolStripMenuItem.Name = "finalizarPedidosToolStripMenuItem";
-            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.finalizarPedidosToolStripMenuItem.Text = "Finalizar pedidos";
             // 
             // mesasToolStripMenuItem
             // 
             this.mesasToolStripMenuItem.Name = "mesasToolStripMenuItem";
-            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mesasToolStripMenuItem.Text = "Mesas";
             // 
             // mozosToolStripMenuItem
             // 
             this.mozosToolStripMenuItem.Name = "mozosToolStripMenuItem";
-            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mozosToolStripMenuItem.Text = "Mozos";
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
             // btnVolver
             // 
-            this.btnVolver.Location = new System.Drawing.Point(13, 611);
+            this.btnVolver.Location = new System.Drawing.Point(11, 495);
+            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(135, 52);
+            this.btnVolver.Size = new System.Drawing.Size(101, 42);
             this.btnVolver.TabIndex = 10;
             this.btnVolver.Text = "Volver a Inicio";
             this.btnVolver.UseVisualStyleBackColor = true;
             // 
             // btnFinalizarPedidos
             // 
-            this.btnFinalizarPedidos.Location = new System.Drawing.Point(928, 611);
+            this.btnFinalizarPedidos.Location = new System.Drawing.Point(880, 495);
+            this.btnFinalizarPedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFinalizarPedidos.Name = "btnFinalizarPedidos";
-            this.btnFinalizarPedidos.Size = new System.Drawing.Size(135, 52);
+            this.btnFinalizarPedidos.Size = new System.Drawing.Size(101, 42);
             this.btnFinalizarPedidos.TabIndex = 11;
             this.btnFinalizarPedidos.Text = "Finalizar Pedidos";
             this.btnFinalizarPedidos.UseVisualStyleBackColor = true;
@@ -199,14 +201,15 @@
             // 
             // Pedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PatronState.Properties.Resources.fondo2;
-            this.ClientSize = new System.Drawing.Size(1086, 675);
+            this.ClientSize = new System.Drawing.Size(997, 548);
             this.Controls.Add(this.btnFinalizarPedidos);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tablaPedidos);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos";

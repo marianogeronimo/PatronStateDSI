@@ -65,10 +65,9 @@
             this.mesa,
             this.seccion,
             this.mozo});
-            this.tablaPedidos.Location = new System.Drawing.Point(13, 48);
-            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4);
+            this.tablaPedidos.Location = new System.Drawing.Point(12, 48);
             this.tablaPedidos.Name = "tablaPedidos";
-            this.tablaPedidos.Size = new System.Drawing.Size(1179, 507);
+            this.tablaPedidos.Size = new System.Drawing.Size(983, 403);
             this.tablaPedidos.TabIndex = 0;
             // 
             // producto
@@ -111,9 +110,10 @@
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Image = global::PatronState.Properties.Resources.si;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(1057, 586);
+            this.btnAceptar.Location = new System.Drawing.Point(894, 476);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(135, 52);
+            this.btnAceptar.Size = new System.Drawing.Size(101, 42);
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -121,18 +121,20 @@
             // 
             // btnDesmarcar
             // 
-            this.btnDesmarcar.Location = new System.Drawing.Point(891, 586);
+            this.btnDesmarcar.Location = new System.Drawing.Point(770, 476);
+            this.btnDesmarcar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDesmarcar.Name = "btnDesmarcar";
-            this.btnDesmarcar.Size = new System.Drawing.Size(135, 52);
+            this.btnDesmarcar.Size = new System.Drawing.Size(101, 42);
             this.btnDesmarcar.TabIndex = 5;
             this.btnDesmarcar.Text = "Desmarcar todo";
             this.btnDesmarcar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(729, 586);
+            this.btnCancelar.Location = new System.Drawing.Point(645, 476);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(135, 52);
+            this.btnCancelar.Size = new System.Drawing.Size(101, 42);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -140,9 +142,10 @@
             // 
             // btnAyuda
             // 
-            this.btnAyuda.Location = new System.Drawing.Point(13, 586);
+            this.btnAyuda.Location = new System.Drawing.Point(10, 476);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(76, 52);
+            this.btnAyuda.Size = new System.Drawing.Size(57, 42);
             this.btnAyuda.TabIndex = 7;
             this.btnAyuda.Text = "?";
             this.btnAyuda.UseVisualStyleBackColor = true;
@@ -157,7 +160,8 @@
             this.usuarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1224, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1017, 24);
             this.menuStrip1.TabIndex = 8;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -166,13 +170,13 @@
             this.asdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.asddasToolStripMenuItem});
             this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
-            this.asdToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.asdToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.asdToolStripMenuItem.Text = "Inicio";
             // 
             // asddasToolStripMenuItem
             // 
             this.asddasToolStripMenuItem.Name = "asddasToolStripMenuItem";
-            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(130, 26);
+            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
             this.asddasToolStripMenuItem.Text = "asddas";
             // 
             // dsaToolStripMenuItem
@@ -182,7 +186,7 @@
             this.mesasToolStripMenuItem,
             this.mozosToolStripMenuItem});
             this.dsaToolStripMenuItem.Name = "dsaToolStripMenuItem";
-            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             this.dsaToolStripMenuItem.Text = "Restaurante";
             // 
             // pedidosToolStripMenuItem
@@ -190,39 +194,39 @@
             this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.finalizarPedidosToolStripMenuItem});
             this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.pedidosToolStripMenuItem.Text = "Pedidos";
             // 
             // finalizarPedidosToolStripMenuItem
             // 
             this.finalizarPedidosToolStripMenuItem.Name = "finalizarPedidosToolStripMenuItem";
-            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(197, 26);
+            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.finalizarPedidosToolStripMenuItem.Text = "Finalizar pedidos";
             // 
             // mesasToolStripMenuItem
             // 
             this.mesasToolStripMenuItem.Name = "mesasToolStripMenuItem";
-            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.mesasToolStripMenuItem.Text = "Mesas";
             // 
             // mozosToolStripMenuItem
             // 
             this.mozosToolStripMenuItem.Name = "mozosToolStripMenuItem";
-            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
+            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.mozosToolStripMenuItem.Text = "Mozos";
             // 
             // usuarioToolStripMenuItem
             // 
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(71, 24);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
             // FinalizarPedido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PatronState.Properties.Resources.fondo2;
-            this.ClientSize = new System.Drawing.Size(1224, 672);
+            this.ClientSize = new System.Drawing.Size(1017, 537);
             this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnDesmarcar);
@@ -230,7 +234,6 @@
             this.Controls.Add(this.tablaPedidos);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FinalizarPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finalizar pedido";

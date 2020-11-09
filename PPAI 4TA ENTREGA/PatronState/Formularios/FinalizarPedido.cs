@@ -55,7 +55,7 @@ namespace PatronState
 
         private List<Pedido> obtenerPedidos()
         {
-            Basededatos<Pedido> bd = new Clases.Basededatos<Pedido>("./persistencia/bd_pedidos");
+            Basededatos<Pedido> bd = new Basededatos<Pedido>("./persistencia/bd_pedidos");
             bd.Cargar();
             return bd.valores;
         }
@@ -73,7 +73,7 @@ namespace PatronState
             productos.Add(lomito);
             Pedido pedido1 = new Pedido(1, DateTime.Now, mesa12,productos);
 
-            cargar_grilla(pedido1);
+            cargar_grilla();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -89,8 +89,10 @@ namespace PatronState
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            
             Pedidos frm_pedidos = new Pedidos();
             frm_pedidos.ShowDialog();
+            this.Dispose();
         }
     }
 }
