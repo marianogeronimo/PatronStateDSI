@@ -53,7 +53,7 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void crearProximoEstado()
+        public override Estado crearProximoEstado()
         {
             throw new NotImplementedException();
         }

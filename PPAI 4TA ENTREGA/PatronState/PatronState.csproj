@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clases\BaseDeDatos.cs" />
     <Compile Include="Clases\DetallePedido.cs" />
     <Compile Include="Clases\Estado.cs" />
     <Compile Include="Clases\Estados\Cancelado.cs" />
