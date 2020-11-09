@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PatronState.Formularios;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace PatronState
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FinalizarPedido());
+            Application.Run(new Pedidos());
         }
     }
 }

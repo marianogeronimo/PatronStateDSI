@@ -21,5 +21,15 @@ namespace PatronState.Formularios
         {
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void ConfirmarFinalizacion_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

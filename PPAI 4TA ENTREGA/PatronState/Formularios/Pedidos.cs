@@ -26,7 +26,7 @@ namespace PatronState.Formularios
         {
             FinalizarPedido frmFinalizarPerdido = new FinalizarPedido();
             frmFinalizarPerdido.ShowDialog();
-            this.Close();
+            
         }
     }
 }

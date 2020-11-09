@@ -84,15 +84,13 @@ namespace PatronState
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             ConfirmarFinalizacion frm_finalizar = new ConfirmarFinalizacion();
-            frm_finalizar.ShowDialog();
+            frm_finalizar.Show();
+            
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            
-            Pedidos frm_pedidos = new Pedidos();
-            frm_pedidos.ShowDialog();
-            this.Dispose();
+            this.Close();
         }
     }
 }

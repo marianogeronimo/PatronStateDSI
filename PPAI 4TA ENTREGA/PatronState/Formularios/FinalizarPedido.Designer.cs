@@ -39,17 +39,8 @@
             this.btnDesmarcar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAyuda = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.asdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asddasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.finalizarPedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mozosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPedidos)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tablaPedidos
@@ -65,9 +56,10 @@
             this.mesa,
             this.seccion,
             this.mozo});
-            this.tablaPedidos.Location = new System.Drawing.Point(12, 48);
+            this.tablaPedidos.Location = new System.Drawing.Point(16, 59);
+            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.tablaPedidos.Name = "tablaPedidos";
-            this.tablaPedidos.Size = new System.Drawing.Size(983, 403);
+            this.tablaPedidos.Size = new System.Drawing.Size(1311, 496);
             this.tablaPedidos.TabIndex = 0;
             // 
             // producto
@@ -105,142 +97,90 @@
             // 
             // btnAceptar
             // 
+            this.btnAceptar.BackColor = System.Drawing.Color.Tan;
             this.btnAceptar.BackgroundImage = global::PatronState.Properties.Resources.si;
             this.btnAceptar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAceptar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptar.Image = global::PatronState.Properties.Resources.si;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnAceptar.Location = new System.Drawing.Point(894, 476);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Location = new System.Drawing.Point(1192, 586);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(101, 42);
+            this.btnAceptar.Size = new System.Drawing.Size(135, 52);
             this.btnAceptar.TabIndex = 6;
             this.btnAceptar.Text = "Aceptar";
-            this.btnAceptar.UseVisualStyleBackColor = true;
+            this.btnAceptar.UseVisualStyleBackColor = false;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
             // 
             // btnDesmarcar
             // 
-            this.btnDesmarcar.Location = new System.Drawing.Point(770, 476);
-            this.btnDesmarcar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDesmarcar.BackColor = System.Drawing.Color.Tan;
+            this.btnDesmarcar.BackgroundImage = global::PatronState.Properties.Resources.deseleccionar1;
+            this.btnDesmarcar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnDesmarcar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDesmarcar.Location = new System.Drawing.Point(1027, 586);
+            this.btnDesmarcar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDesmarcar.Name = "btnDesmarcar";
-            this.btnDesmarcar.Size = new System.Drawing.Size(101, 42);
+            this.btnDesmarcar.Size = new System.Drawing.Size(135, 52);
             this.btnDesmarcar.TabIndex = 5;
             this.btnDesmarcar.Text = "Desmarcar todo";
-            this.btnDesmarcar.UseVisualStyleBackColor = true;
+            this.btnDesmarcar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(645, 476);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.BackColor = System.Drawing.Color.Tan;
+            this.btnCancelar.BackgroundImage = global::PatronState.Properties.Resources.cancelar;
+            this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(860, 586);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(101, 42);
+            this.btnCancelar.Size = new System.Drawing.Size(135, 52);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnAyuda
             // 
-            this.btnAyuda.Location = new System.Drawing.Point(10, 476);
-            this.btnAyuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAyuda.BackgroundImage = global::PatronState.Properties.Resources.informacion;
+            this.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAyuda.Location = new System.Drawing.Point(22, 586);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAyuda.Name = "btnAyuda";
-            this.btnAyuda.Size = new System.Drawing.Size(57, 42);
+            this.btnAyuda.Size = new System.Drawing.Size(76, 52);
             this.btnAyuda.TabIndex = 7;
-            this.btnAyuda.Text = "?";
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.button1_Click);
             // 
-            // menuStrip1
+            // label1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asdToolStripMenuItem,
-            this.dsaToolStripMenuItem,
-            this.usuarioToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1017, 24);
-            this.menuStrip1.TabIndex = 8;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // asdToolStripMenuItem
-            // 
-            this.asdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asddasToolStripMenuItem});
-            this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
-            this.asdToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.asdToolStripMenuItem.Text = "Inicio";
-            // 
-            // asddasToolStripMenuItem
-            // 
-            this.asddasToolStripMenuItem.Name = "asddasToolStripMenuItem";
-            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.asddasToolStripMenuItem.Text = "asddas";
-            // 
-            // dsaToolStripMenuItem
-            // 
-            this.dsaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pedidosToolStripMenuItem,
-            this.mesasToolStripMenuItem,
-            this.mozosToolStripMenuItem});
-            this.dsaToolStripMenuItem.Name = "dsaToolStripMenuItem";
-            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.dsaToolStripMenuItem.Text = "Restaurante";
-            // 
-            // pedidosToolStripMenuItem
-            // 
-            this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.finalizarPedidosToolStripMenuItem});
-            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.pedidosToolStripMenuItem.Text = "Pedidos";
-            // 
-            // finalizarPedidosToolStripMenuItem
-            // 
-            this.finalizarPedidosToolStripMenuItem.Name = "finalizarPedidosToolStripMenuItem";
-            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.finalizarPedidosToolStripMenuItem.Text = "Finalizar pedidos";
-            // 
-            // mesasToolStripMenuItem
-            // 
-            this.mesasToolStripMenuItem.Name = "mesasToolStripMenuItem";
-            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mesasToolStripMenuItem.Text = "Mesas";
-            // 
-            // mozosToolStripMenuItem
-            // 
-            this.mozosToolStripMenuItem.Name = "mozosToolStripMenuItem";
-            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mozosToolStripMenuItem.Text = "Mozos";
-            // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.usuarioToolStripMenuItem.Text = "Usuario";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(16, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(622, 32);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Por favor, selecciones los pedidos a finalizar";
             // 
             // FinalizarPedido
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::PatronState.Properties.Resources.fondo2;
-            this.ClientSize = new System.Drawing.Size(1017, 537);
+            this.ClientSize = new System.Drawing.Size(1356, 661);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btnAceptar);
             this.Controls.Add(this.btnDesmarcar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.tablaPedidos);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FinalizarPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finalizar pedido";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaPedidos)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -259,15 +199,7 @@
         private System.Windows.Forms.Button btnDesmarcar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAyuda;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asddasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dsaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mozosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem finalizarPedidosToolStripMenuItem;
+        private System.Windows.Forms.Label label1;
     }
 }
 
