@@ -64,8 +64,8 @@ namespace PatronState
             DataGridViewRowCollection filas = tablaPedidos.Rows;
             for (int i = 0; i < filas.Count; i++)
             {
-                CheckBox ck = (CheckBox)filas[i].Cells[0].Value;
-                if (ck.Checked)
+                String ck = (String)filas[i].Cells[0].Value;
+                if (ck=="true")
                 {
                     listaDetallesSeleccionados.Add(listaDetallesEnPreparacion[i]);
                 }

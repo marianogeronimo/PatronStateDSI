@@ -1,5 +1,4 @@
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csprojAssemblyReference.cache
-D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.frmFinalizarPedido.resources
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.GenerateResource.cache
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.Formularios.ConfirmarFinalizacion.resources
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.FinalizarPedido.resources
@@ -49,3 +48,13 @@ C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\ob
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CopyComplete
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.exe
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.pdb
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe.config
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.pdb
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\Newtonsoft.Json.dll
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\Newtonsoft.Json.xml
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.Properties.Resources.resources
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CoreCompileInputs.cache
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CopyComplete
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.exe
+D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.pdb
