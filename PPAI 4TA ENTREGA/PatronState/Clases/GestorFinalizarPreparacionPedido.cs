@@ -12,10 +12,13 @@ namespace PatronState.Clases
         DateTime fechaHoraActual;
         List<DetallePedido> detallePedidoSeleccionado;
 
-        GestorFinalizarPreparacionPedido()
+        public GestorFinalizarPreparacionPedido()
         {
             fechaHoraActual = DateTime.Now;
         }
+
+        public DateTime FechaHoraActual { get => fechaHoraActual; set => fechaHoraActual = value; }
+        internal List<DetallePedido> DetallePedidoSeleccionado { get => detallePedidoSeleccionado; set => detallePedidoSeleccionado = value; }
 
         public void actualizarEstadoAListoParaServir()
         {
