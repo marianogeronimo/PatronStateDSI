@@ -18,9 +18,6 @@ C:\Users\Facu\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\D
 C:\Users\Facu\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CopyComplete
 C:\Users\Facu\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.exe
 C:\Users\Facu\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.pdb
-C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe.config
-C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe
-C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.pdb
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csprojAssemblyReference.cache
@@ -31,8 +28,6 @@ C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Deb
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.GenerateResource.cache
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CoreCompileInputs.cache
 C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CopyComplete
-C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.exe
-C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.pdb
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe.config
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.exe
 C:\Users\MARIANO\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\WindowsFormsApp2.pdb
@@ -58,3 +53,12 @@ D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debu
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.csproj.CopyComplete
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.exe
 D:\Usuario\Documents\GitHub\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\WindowsFormsApp2.pdb
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\PatronState.exe.config
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\PatronState.exe.manifest
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\PatronState.application
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\PatronState.exe
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\bin\Debug\PatronState.pdb
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.exe.manifest
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.application
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.exe
+C:\Users\Julian\source\repos\PatronStateDSI\PPAI 4TA ENTREGA\PatronState\obj\Debug\PatronState.pdb
