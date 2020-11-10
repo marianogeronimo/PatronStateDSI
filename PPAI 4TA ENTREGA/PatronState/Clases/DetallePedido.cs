@@ -14,7 +14,7 @@ namespace PatronState.Clases
         float precioTotal;
         Boolean esMenu;
         Estado estadoActual;
-        List<HistorialEstado> historialEstados;
+        List<HistorialEstado> historialEstados = new List<HistorialEstado>();
        
         public DetallePedido(string producto, int cant, float precioU, Boolean esMenu)
         {
@@ -47,14 +47,6 @@ namespace PatronState.Clases
         public Estado EstadoActual { get => estadoActual; set => estadoActual = value; }
         internal List<HistorialEstado> HistorialEstados { get => historialEstados; set => historialEstados = value; }
 
-        public void finalizarPreparacion(DateTime fechaHoraActual)
-        {
-
-        }
-
-
-
-
 
         public void agregarHistorial(HistorialEstado historial)
         {
@@ -69,6 +61,11 @@ namespace PatronState.Clases
         public void notificar(DateTime fechaHoraActual)
         {
             estadoActual.notificar(fechaHoraActual, this);
+        }
+
+        public void finalizarPreparacion(DateTime fechaHoraActual)
+        {
+            estadoActual.finalizarPreparacion(fechaHoraActual, this);
         }
     }
 }

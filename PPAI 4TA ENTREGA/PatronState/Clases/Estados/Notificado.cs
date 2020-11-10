@@ -38,11 +38,6 @@ namespace PatronState.Clases
 
         //Metodos que no implementa
 
-        public override HistorialEstado buscarHistoriaActual()
-        {
-            throw new NotImplementedException();
-        }
-
         public override void cancelar()
         {
             throw new NotImplementedException();

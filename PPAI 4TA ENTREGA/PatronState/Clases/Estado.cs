@@ -11,7 +11,6 @@ namespace PatronState.Clases
         public string Nombre { get => nombre; set => nombre = value; }
         internal HistorialEstado HistorialReferenciado { get => historialReferenciado; set => historialReferenciado = value; }
 
-        public abstract HistorialEstado buscarHistoriaActual();
         public abstract void cancelar();
         public abstract Estado crearProximoEstado();
         public abstract bool esCancelado();

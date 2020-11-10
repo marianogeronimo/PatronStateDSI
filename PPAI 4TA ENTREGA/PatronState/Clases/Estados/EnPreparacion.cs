@@ -13,11 +13,7 @@ namespace PatronState.Clases
         {
             this.ambito = "DetalleDePedido";
             this.nombre = this.GetType().Name;
-        }
-
-        public override HistorialEstado buscarHistoriaActual()
-        {
-            throw new NotImplementedException();
+            crearHistorialEstado(DateTime.Now);
         }
 
         public override Estado crearProximoEstado()

@@ -49,13 +49,15 @@ namespace PatronState.Clases
         public List<Pedido> finalizarPedido()
         {
             // List<DetallePedido> detallesEnPreparacion = buscarDetallePedidosEnPreparacion();
-            Basededatos.Cargar1();
             return Basededatos.valores;
         }
 
+
+
+        // metodos que no se usan pero seria la manera correcta
+        // ---------------------------------------------------------------------------------
         private List<DetallePedido> buscarDetallePedidosEnPreparacion()
         {
-            Basededatos.Cargar1();
             List<Pedido> pedidos = Basededatos.valores;
             List<DetallePedido> detallesEnPreparacion = new List<DetallePedido>();
             for (int i = 0; i < pedidos.Count; i++)
@@ -64,13 +66,14 @@ namespace PatronState.Clases
                     if (dp.EstadoActual is EnPreparacion)
                         detallesEnPreparacion.Add(dp);
             }
+            ordenarSegunMayorTiempoEspera(detallesEnPreparacion);
             return detallesEnPreparacion;
 
         }
 
         private void ordenarSegunMayorTiempoEspera(List<DetallePedido> detalles)
         {
-            detalles.OrderBy(x => x);
+            //detalles.OrderBy(x => x.Hora);
         }
     }
 }

@@ -15,11 +15,6 @@ namespace PatronState.Clases
             this.nombre = this.GetType().Name;
         }
 
-        public override HistorialEstado buscarHistoriaActual()
-        {
-            throw new NotImplementedException();
-        }
-
         public override Estado crearProximoEstado()
         {
             Estado estadoNuevo = new Notificado();
