@@ -17,17 +17,16 @@ namespace PatronState
 
         List<DetallePedido> listaDetallesEnPreparacion = new List<DetallePedido>();
         List<DetallePedido> listaDetallesSeleccionados = new List<DetallePedido>();
+        GestorFinalizarPreparacionPedido gestor = new GestorFinalizarPreparacionPedido();
 
         public FinalizarPedido()
         {
             InitializeComponent();
         }
 
-        private void cargar_grilla()
+        private void mostrarDetallesPedidosEnPreparacion(List<Pedido> pedido)
         {
-
             int c = 0;
-            List<Pedido> pedido = Basededatos.valores;
             tablaPedidos.Rows.Clear();
             for (int y = 0; y < pedido.Count(); y++)
                 for (int i = 0; i < pedido[y].Productos.Count; i++)
@@ -49,8 +48,7 @@ namespace PatronState
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Basededatos.Cargar1();
-            cargar_grilla();
+            mostrarDetallesPedidosEnPreparacion(gestor.finalizarPedido());
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -76,7 +74,6 @@ namespace PatronState
             DialogResult confirm = MessageBox.Show("¿Seguro que desea finalizar estos pedidos?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
             if (confirm == DialogResult.OK)
             {
-                GestorFinalizarPreparacionPedido gestor = new GestorFinalizarPreparacionPedido();
                 //Seteamos la lista de detalles seleccionados
                 gestor.detalleDePedidoSeleccionado(listaDetallesSeleccionados);
                 //Empieza a actualziar el estado a listo para servir

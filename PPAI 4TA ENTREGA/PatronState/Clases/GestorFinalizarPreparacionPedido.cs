@@ -45,5 +45,32 @@ namespace PatronState.Clases
         {
             detallePedidoSeleccionado = detalles;
         }
+
+        public List<Pedido> finalizarPedido()
+        {
+            // List<DetallePedido> detallesEnPreparacion = buscarDetallePedidosEnPreparacion();
+            Basededatos.Cargar1();
+            return Basededatos.valores;
+        }
+
+        private List<DetallePedido> buscarDetallePedidosEnPreparacion()
+        {
+            Basededatos.Cargar1();
+            List<Pedido> pedidos = Basededatos.valores;
+            List<DetallePedido> detallesEnPreparacion = new List<DetallePedido>();
+            for (int i = 0; i < pedidos.Count; i++)
+            {
+                foreach (DetallePedido dp in pedidos[i].Productos)
+                    if (dp.EstadoActual is EnPreparacion)
+                        detallesEnPreparacion.Add(dp);
+            }
+            return detallesEnPreparacion;
+
+        }
+
+        private void ordenarSegunMayorTiempoEspera(List<DetallePedido> detalles)
+        {
+            detalles.OrderBy(x => x);
+        }
     }
 }
