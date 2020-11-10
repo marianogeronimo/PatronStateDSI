@@ -85,6 +85,22 @@ namespace PatronState.Clases
 
             Pedido pedido5 = new Pedido(5, DateTime.Now, mesa14, productos5);
 
+
+            //pedido6 con estado en servido
+            Servido servido = new Servido();
+            DetallePedido guiso = new DetallePedido("Matambre Completo", 2, 250, false, servido);
+            DetallePedido agua_saborizada = new DetallePedido("Agua Saborizada", 1, 100, false, servido);
+            
+
+            Mesa mesa15 = new Mesa(15, 2, "Seccion 3", "Luis");
+
+            List<DetallePedido> productos6 = new List<DetallePedido>();
+            productos5.Add(guiso);
+            productos5.Add(agua_saborizada);
+
+
+            Pedido pedido6 = new Pedido(5, DateTime.Now, mesa14, productos5);
+
             //final
             valores.Add(pedido1);
             valores.Add(pedido2);

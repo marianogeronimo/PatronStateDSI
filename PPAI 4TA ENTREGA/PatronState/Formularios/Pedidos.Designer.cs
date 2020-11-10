@@ -38,6 +38,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +57,7 @@
             this.tablaPedidos.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.tablaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.estado,
             this.producto,
             this.menu,
             this.cantidad,
@@ -63,7 +65,7 @@
             this.seccion,
             this.mozo});
             this.tablaPedidos.Location = new System.Drawing.Point(63, 100);
-            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4);
             this.tablaPedidos.Name = "tablaPedidos";
             this.tablaPedidos.ReadOnly = true;
             this.tablaPedidos.Size = new System.Drawing.Size(1017, 472);
@@ -155,9 +157,15 @@
             this.label5.Font = new System.Drawing.Font("Corbel", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(22, 18);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(281, 41);
+            this.label5.Size = new System.Drawing.Size(278, 40);
             this.label5.TabIndex = 9;
             this.label5.Text = "Pedidos realizados";
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Estado";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
             // 
             // producto
             // 
@@ -240,6 +248,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn menu;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;

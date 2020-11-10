@@ -64,6 +64,7 @@ namespace PatronState
             DataGridViewRowCollection filas = tablaPedidos.Rows;
             for (int i = 0; i < filas.Count; i++)
             {
+                //Si esta seleccionado va a devolver un string que diga "true"
                 String ck = (String)filas[i].Cells[0].Value;
                 if (ck=="true")
                 {
@@ -76,9 +77,13 @@ namespace PatronState
             if (confirm == DialogResult.OK)
             {
                 GestorFinalizarPreparacionPedido gestor = new GestorFinalizarPreparacionPedido();
-                gestor.actualizarEstadoAListoParaServir();
-                //Empezar todo el proceso de cambiar estado?
+                //Seteamos la lista de detalles seleccionados
+                gestor.detalleDePedidoSeleccionado(listaDetallesSeleccionados);
+                //Empieza a actualziar el estado a listo para servir
+                gestor.actualizarEstadoAListoParaServir();       
             }
+            //Cerramos ventana finalizar pedidos
+            this.Close();
 
         }
 
