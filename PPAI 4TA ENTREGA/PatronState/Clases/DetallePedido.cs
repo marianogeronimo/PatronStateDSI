@@ -15,6 +15,7 @@ namespace PatronState.Clases
         Boolean esMenu;
         Estado estadoActual;
         List<HistorialEstado> historialEstados = new List<HistorialEstado>();
+        DateTime hora;
        
         public DetallePedido(string producto, int cant, float precioU, Boolean esMenu)
         {
@@ -46,7 +47,7 @@ namespace PatronState.Clases
         public bool EsMenu { get => esMenu; set => esMenu = value; }
         public Estado EstadoActual { get => estadoActual; set => estadoActual = value; }
         internal List<HistorialEstado> HistorialEstados { get => historialEstados; set => historialEstados = value; }
-
+        public DateTime Hora { get => hora; set => hora = value; }
 
         public void agregarHistorial(HistorialEstado historial)
         {

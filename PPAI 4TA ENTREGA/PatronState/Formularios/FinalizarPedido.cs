@@ -63,7 +63,7 @@ namespace PatronState
             for (int i = 0; i < filas.Count; i++)
             {
                 //Si esta seleccionado va a devolver un string que diga "true"
-                String ck = (String)filas[i].Cells[0].Value;
+                String ck = (String)filas[i].Cells[0].Value.ToString();
                 if (ck=="true")
                 {
                     listaDetallesSeleccionados.Add(listaDetallesEnPreparacion[i]);
