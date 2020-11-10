@@ -63,7 +63,13 @@ namespace PatronState
             this.Close();
         }
 
-
-
+        private void btnDesmarcar_Click(object sender, EventArgs e)
+        {
+            DataGridViewRowCollection filas = tablaPedidos.Rows;
+            foreach (DataGridViewRow fila in filas)
+            {
+                fila.Cells[0].Value = false;
+            }
+        }
     }
 }

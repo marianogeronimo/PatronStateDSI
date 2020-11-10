@@ -71,7 +71,7 @@
             this.btnAceptar.Image = global::PatronState.Properties.Resources.si;
             this.btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnAceptar.Location = new System.Drawing.Point(894, 476);
-            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAceptar.Margin = new System.Windows.Forms.Padding(2);
             this.btnAceptar.Name = "btnAceptar";
             this.btnAceptar.Size = new System.Drawing.Size(101, 42);
             this.btnAceptar.TabIndex = 6;
@@ -86,12 +86,13 @@
             this.btnDesmarcar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnDesmarcar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDesmarcar.Location = new System.Drawing.Point(770, 476);
-            this.btnDesmarcar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDesmarcar.Margin = new System.Windows.Forms.Padding(2);
             this.btnDesmarcar.Name = "btnDesmarcar";
             this.btnDesmarcar.Size = new System.Drawing.Size(101, 42);
             this.btnDesmarcar.TabIndex = 5;
             this.btnDesmarcar.Text = "Desmarcar todo";
             this.btnDesmarcar.UseVisualStyleBackColor = false;
+            this.btnDesmarcar.Click += new System.EventHandler(this.btnDesmarcar_Click);
             // 
             // btnCancelar
             // 
@@ -100,7 +101,7 @@
             this.btnCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(645, 476);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(101, 42);
             this.btnCancelar.TabIndex = 4;
@@ -113,7 +114,7 @@
             this.btnAyuda.BackgroundImage = global::PatronState.Properties.Resources.informacion;
             this.btnAyuda.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnAyuda.Location = new System.Drawing.Point(16, 476);
-            this.btnAyuda.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAyuda.Margin = new System.Windows.Forms.Padding(2);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(57, 42);
             this.btnAyuda.TabIndex = 7;
@@ -133,34 +134,38 @@
             // 
             // seleccionado
             // 
+            this.seleccionado.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.seleccionado.HeaderText = "Seleccionado";
             this.seleccionado.Name = "seleccionado";
+            this.seleccionado.Width = 78;
             // 
             // producto
             // 
+            this.producto.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.producto.HeaderText = "Producto";
             this.producto.Name = "producto";
-            this.producto.ReadOnly = true;
-            this.producto.Width = 250;
+            this.producto.Width = 75;
             // 
             // menu
             // 
+            this.menu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.menu.HeaderText = "Menu";
             this.menu.Name = "menu";
-            this.menu.ReadOnly = true;
-            this.menu.Width = 250;
+            this.menu.Width = 59;
             // 
             // cantidad
             // 
+            this.cantidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
-            this.cantidad.ReadOnly = true;
+            this.cantidad.Width = 74;
             // 
             // mesa
             // 
+            this.mesa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
             this.mesa.HeaderText = "Nro Mesa";
             this.mesa.Name = "mesa";
-            this.mesa.ReadOnly = true;
+            this.mesa.Width = 78;
             // 
             // FinalizarPedido
             // 

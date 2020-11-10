@@ -36,5 +36,14 @@ namespace PatronState.Clases
             }
         }
 
+        public void confirmacionElaboracion()
+        {
+            actualizarEstadoAListoParaServir();
+        }
+
+        public void detalleDePedidoSeleccionado(List<DetallePedido> detalles)
+        {
+            detallePedidoSeleccionado = detalles;
+        }
     }
 }
