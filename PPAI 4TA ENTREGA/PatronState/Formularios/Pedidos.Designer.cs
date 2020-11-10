@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.tablaPedidos = new System.Windows.Forms.DataGridView();
+            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mozo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,13 +45,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.seccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mozo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_ActualizarPedido = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPedidos)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +73,54 @@
             this.tablaPedidos.ReadOnly = true;
             this.tablaPedidos.Size = new System.Drawing.Size(1017, 472);
             this.tablaPedidos.TabIndex = 1;
+            // 
+            // estado
+            // 
+            this.estado.HeaderText = "Estado";
+            this.estado.Name = "estado";
+            this.estado.ReadOnly = true;
+            // 
+            // producto
+            // 
+            this.producto.HeaderText = "Producto";
+            this.producto.Name = "producto";
+            this.producto.ReadOnly = true;
+            this.producto.Width = 250;
+            // 
+            // menu
+            // 
+            this.menu.HeaderText = "Menu";
+            this.menu.Name = "menu";
+            this.menu.ReadOnly = true;
+            this.menu.Width = 75;
+            // 
+            // cantidad
+            // 
+            this.cantidad.HeaderText = "Cantidad";
+            this.cantidad.Name = "cantidad";
+            this.cantidad.ReadOnly = true;
+            this.cantidad.Width = 75;
+            // 
+            // mesa
+            // 
+            this.mesa.HeaderText = "Nro Mesa";
+            this.mesa.Name = "mesa";
+            this.mesa.ReadOnly = true;
+            this.mesa.Width = 75;
+            // 
+            // seccion
+            // 
+            this.seccion.HeaderText = "Seccion";
+            this.seccion.Name = "seccion";
+            this.seccion.ReadOnly = true;
+            this.seccion.Width = 75;
+            // 
+            // mozo
+            // 
+            this.mozo.HeaderText = "Mozo";
+            this.mozo.Name = "mozo";
+            this.mozo.ReadOnly = true;
+            this.mozo.Width = 250;
             // 
             // label1
             // 
@@ -161,53 +212,40 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Pedidos realizados";
             // 
-            // estado
+            // btn_ActualizarPedido
             // 
-            this.estado.HeaderText = "Estado";
-            this.estado.Name = "estado";
-            this.estado.ReadOnly = true;
+            this.btn_ActualizarPedido.BackColor = System.Drawing.Color.Tan;
+            this.btn_ActualizarPedido.BackgroundImage = global::PatronState.Properties.Resources.actualizar;
+            this.btn_ActualizarPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_ActualizarPedido.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_ActualizarPedido.Location = new System.Drawing.Point(835, 585);
+            this.btn_ActualizarPedido.Name = "btn_ActualizarPedido";
+            this.btn_ActualizarPedido.Size = new System.Drawing.Size(69, 57);
+            this.btn_ActualizarPedido.TabIndex = 20;
+            this.btn_ActualizarPedido.UseVisualStyleBackColor = false;
+            this.btn_ActualizarPedido.Click += new System.EventHandler(this.btn_ActualizarPedido_Click);
             // 
-            // producto
+            // label6
             // 
-            this.producto.HeaderText = "Producto";
-            this.producto.Name = "producto";
-            this.producto.ReadOnly = true;
-            this.producto.Width = 250;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(821, 645);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(101, 24);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Actualizar";
             // 
-            // menu
+            // label7
             // 
-            this.menu.HeaderText = "Menu";
-            this.menu.Name = "menu";
-            this.menu.ReadOnly = true;
-            this.menu.Width = 75;
-            // 
-            // cantidad
-            // 
-            this.cantidad.HeaderText = "Cantidad";
-            this.cantidad.Name = "cantidad";
-            this.cantidad.ReadOnly = true;
-            this.cantidad.Width = 75;
-            // 
-            // mesa
-            // 
-            this.mesa.HeaderText = "Nro Mesa";
-            this.mesa.Name = "mesa";
-            this.mesa.ReadOnly = true;
-            this.mesa.Width = 75;
-            // 
-            // seccion
-            // 
-            this.seccion.HeaderText = "Seccion";
-            this.seccion.Name = "seccion";
-            this.seccion.ReadOnly = true;
-            this.seccion.Width = 75;
-            // 
-            // mozo
-            // 
-            this.mozo.HeaderText = "Mozo";
-            this.mozo.Name = "mozo";
-            this.mozo.ReadOnly = true;
-            this.mozo.Width = 250;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(831, 669);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(86, 24);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Pedidos";
             // 
             // Pedidos
             // 
@@ -216,6 +254,9 @@
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = global::PatronState.Properties.Resources.fondo2;
             this.ClientSize = new System.Drawing.Size(1124, 700);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btn_ActualizarPedido);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button1);
@@ -255,5 +296,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mesa;
         private System.Windows.Forms.DataGridViewTextBoxColumn seccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn mozo;
+        private System.Windows.Forms.Button btn_ActualizarPedido;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
