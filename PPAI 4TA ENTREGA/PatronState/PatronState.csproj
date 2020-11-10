@@ -58,6 +58,7 @@
     <Compile Include="Clases\Estados\Notificado.cs" />
     <Compile Include="Clases\Estados\PedienteDePreparacion.cs" />
     <Compile Include="Clases\Estados\Servido.cs" />
+    <Compile Include="Clases\GestorFinalizarPreparacionPedido.cs" />
     <Compile Include="Clases\HistorialEstado.cs" />
     <Compile Include="Clases\Mesa.cs" />
     <Compile Include="Clases\Pedido.cs" />

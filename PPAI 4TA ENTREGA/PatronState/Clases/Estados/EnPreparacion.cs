@@ -38,7 +38,7 @@ namespace PatronState.Clases
         
         public override void finalizarPreparacion()
         {
-            throw new NotImplementedException();
+            
         }
 
         public override string getAmbito()

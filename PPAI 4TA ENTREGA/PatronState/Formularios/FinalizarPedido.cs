@@ -14,40 +14,26 @@ namespace PatronState
 {
     public partial class FinalizarPedido : Form
     {
-        internal Basededatos basededatos;
-
         public FinalizarPedido()
         {
             InitializeComponent();
         }
 
-        private void cargar_grilla(Pedido pedido)
-        {
-            tablaPedidos.Rows.Clear();
-            for (int i = 0; i < pedido.Productos.Count; i++)
-            {
-                tablaPedidos.Rows.Add();
-                tablaPedidos.Rows[i].Cells[0].Value = pedido.Productos[i].NombreProducto;
-                tablaPedidos.Rows[i].Cells[1].Value = pedido.Productos[i].EsMenu;
-                tablaPedidos.Rows[i].Cells[2].Value = pedido.Productos[i].Cantidad;
-                tablaPedidos.Rows[i].Cells[3].Value = pedido.Mesa.NumeroMesa;
-;
-            }
-
-        }
-
         private void cargar_grilla()
         {
-            List<Pedido> pedido = basededatos.valores;
+
+            int c = 0;
+            List<Pedido> pedido = Basededatos.valores;
             tablaPedidos.Rows.Clear();
             for (int y = 0; y < pedido.Count(); y++)
                 for (int i = 0; i < pedido[y].Productos.Count; i++)
                 {
                     tablaPedidos.Rows.Add();
-                    tablaPedidos.Rows[i].Cells[1].Value = pedido[y].Productos[i].NombreProducto;
-                    tablaPedidos.Rows[i].Cells[2].Value = pedido[y].Productos[i].EsMenu;
-                    tablaPedidos.Rows[i].Cells[3].Value = pedido[y].Productos[i].Cantidad;
-                    tablaPedidos.Rows[i].Cells[4].Value = pedido[y].Mesa.NumeroMesa;
+                    tablaPedidos.Rows[c].Cells[1].Value = pedido[y].Productos[i].NombreProducto;
+                    tablaPedidos.Rows[c].Cells[2].Value = pedido[y].Productos[i].EsMenu;
+                    tablaPedidos.Rows[c].Cells[3].Value = pedido[y].Productos[i].Cantidad;
+                    tablaPedidos.Rows[c].Cells[4].Value = pedido[y].Mesa.NumeroMesa;
+                    c += 1;
                 }
 
         }
@@ -56,19 +42,7 @@ namespace PatronState
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            basededatos.Cargar1();
-
-            DetallePedido hamburguesa = new DetallePedido("Hamburguesa", 1, 200, false);
-            DetallePedido lomito = new DetallePedido("Lomito de Ternera", 1, 300, false);
-
-            Mesa mesa12 = new Mesa(12, 2, "Seccion 1", "Facundo");
-
-
-            List<DetallePedido> productos = new List<DetallePedido>();
-            productos.Add(hamburguesa);
-            productos.Add(lomito);
-            Pedido pedido1 = new Pedido(1, DateTime.Now, mesa12,productos);
-
+            Basededatos.Cargar1();
             cargar_grilla();
         }
 

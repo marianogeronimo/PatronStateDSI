@@ -13,8 +13,6 @@ namespace PatronState.Formularios
     public partial class Pedidos : Form
     {
 
-        Clases.Basededatos basededatos = new Clases.Basededatos();
-
         public Pedidos()
         {
             InitializeComponent();
@@ -28,8 +26,6 @@ namespace PatronState.Formularios
         private void btnFinalizarPedidos_Click(object sender, EventArgs e)
         {
             FinalizarPedido frmFinalizarPerdido = new FinalizarPedido();
-            this.AddOwnedForm(frmFinalizarPerdido);
-            frmFinalizarPerdido.basededatos = basededatos;
             frmFinalizarPerdido.ShowDialog();
         }
 

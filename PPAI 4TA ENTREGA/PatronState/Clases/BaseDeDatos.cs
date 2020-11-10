@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace PatronState.Clases
 {
-    class Basededatos
+    static class Basededatos
     {
-        public List<Pedido> valores = new List<Pedido>();
+        static public List<Pedido> valores = new List<Pedido>();
 
 
-        public void Cargar1()
+        static public void Cargar1()
         {
+            if (valores.Count > 0) return;
             // clases iniciales
             // pedido1
             DetallePedido hamburguesa = new DetallePedido("Hamburguesa", 1, 200, false);
@@ -50,7 +51,7 @@ namespace PatronState.Clases
             List<DetallePedido> productos3 = new List<DetallePedido>();
             productos3.Add(picada_4);
             productos3.Add(gaseosa_2lt_CocaCola);
-            productos3.Add(gaseosa_2lt_CocaCola);
+            productos3.Add(cerveza_1lt_Heineken);
 
 
             Pedido pedido3 = new Pedido(3, DateTime.Now, mesa8, productos3);
@@ -92,20 +93,20 @@ namespace PatronState.Clases
             valores.Add(pedido5);
         }
 
-        public List<Pedido> Cargar()
+        static public List<Pedido> Cargar()
         {
             //if(opcion == 1) {return valores.OrderBy()}
             return valores;
         }
 
 
-        public List<Pedido> Buscar(Func<Pedido, bool> criterio)
+        static public List<Pedido> Buscar(Func<Pedido, bool> criterio)
         {
             return valores.Where(criterio).ToList();
         }
 
 
-        public void Actualizar(Func<Pedido, bool> criterio, Pedido nuevo)
+        static public void Actualizar(Func<Pedido, bool> criterio, Pedido nuevo)
         {
             valores = valores.Select(x =>
             {

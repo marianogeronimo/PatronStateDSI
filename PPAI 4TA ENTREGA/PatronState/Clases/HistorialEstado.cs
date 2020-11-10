@@ -12,9 +12,9 @@ namespace PatronState.Clases
         private DateTime fechaHoraInicio;
         private Estado estado;
 
-        public HistorialEstado(DateTime fechaHoraInicio, Estado estado)
+        public HistorialEstado(DateTime fechaInicio, Estado estado)
         {
-            this.fechaHoraInicio = fechaHoraInicio;
+            this.fechaHoraInicio = fechaInicio;
             conocerEstado(estado);
         }
 
@@ -25,6 +25,12 @@ namespace PatronState.Clases
         public void conocerEstado(Estado estado)
         {
             this.estado = estado;
+            this.estado.HistorialReferenciado = this;
+        }
+
+        public void setFechaFinEstado(DateTime fechaHoraActual)
+        {
+            FechaHoraFin = fechaHoraActual;
         }
 
 

@@ -20,9 +20,10 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override HistorialEstado crearHistorialEstado()
+        public override HistorialEstado crearHistorialEstado(DateTime fechaInicio)
         {
-            throw new NotImplementedException();
+            HistorialEstado nuevo = new HistorialEstado(fechaInicio, this);
+            return nuevo;
         }
 
         public override Estado crearProximoEstado()
@@ -46,9 +47,13 @@ namespace PatronState.Clases
             return nombre;
         }
 
-        public override void notificar()
+        public override void notificar(DateTime fechaHoraActual, DetallePedido detalle)
         {
-            throw new NotImplementedException();
+            historialReferenciado.setFechaFinEstado(fechaHoraActual);
+            Estado nuevoEstado = crearProximoEstado();
+            HistorialEstado nuevoHistorial = crearHistorialEstado(fechaHoraActual);
+            detalle.agregarHistorial(nuevoHistorial);
+            detalle.setEstadoActual(nuevoEstado);
         }
 
         //Metodos que no implementa

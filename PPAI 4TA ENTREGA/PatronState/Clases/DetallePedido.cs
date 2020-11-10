@@ -13,7 +13,8 @@ namespace PatronState.Clases
         float precioUnitario;
         float precioTotal;
         Boolean esMenu;
-        Estado estado;
+        Estado estadoActual;
+        List<HistorialEstado> historialEstados;
        
         public DetallePedido(string producto, int cant, float precioU, Boolean esMenu)
         {
@@ -23,7 +24,7 @@ namespace PatronState.Clases
             this.PrecioUnitario = precioU;
             this.PrecioTotal = precioU * cant;
             this.EsMenu = esMenu;
-            this.estado = preparacion;
+            this.estadoActual = preparacion;
         }
 
         public string NombreProducto { get => nombreProducto; set => nombreProducto = value; }
@@ -31,6 +32,23 @@ namespace PatronState.Clases
         public float PrecioUnitario { get => precioUnitario; set => precioUnitario = value; }
         public float PrecioTotal { get => precioTotal; set => precioTotal = value; }
         public bool EsMenu { get => esMenu; set => esMenu = value; }
-        public Estado Estado { get => estado; set => estado = value; }
+        public Estado EstadoActual { get => estadoActual; set => estadoActual = value; }
+        internal List<HistorialEstado> HistorialEstados { get => historialEstados; set => historialEstados = value; }
+
+        public void finalizarPreparacion(DateTime fechaHoraActual)
+        {
+
+        }
+
+
+        public void agregarHistorial(HistorialEstado historial)
+        {
+            historialEstados.Add(historial);
+        }
+
+        public void setEstadoActual(Estado estado)
+        {
+            estadoActual = estado;
+        } 
     }
 }
