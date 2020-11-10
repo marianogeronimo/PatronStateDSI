@@ -72,9 +72,14 @@ namespace PatronState
             }
 
 
-            ConfirmarFinalizacion frm_finalizar = new ConfirmarFinalizacion();
-            frm_finalizar.Show();
-            
+            DialogResult confirm = MessageBox.Show("¿Seguro que desea finalizar estos pedidos?", "Alerta", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (confirm == DialogResult.OK)
+            {
+                GestorFinalizarPreparacionPedido gestor = new GestorFinalizarPreparacionPedido();
+                gestor.actualizarEstadoAListoParaServir();
+                //Empezar todo el proceso de cambiar estado?
+            }
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

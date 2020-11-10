@@ -28,26 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedidos));
             this.tablaPedidos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnFinalizarPedidos = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.producto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mesa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.seccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mozo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.asdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.asddasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dsaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.finalizarPedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mesasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mozosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnVolver = new System.Windows.Forms.Button();
-            this.btnFinalizarPedidos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaPedidos)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tablaPedidos
@@ -55,6 +53,7 @@
             this.tablaPedidos.AllowUserToDeleteRows = false;
             this.tablaPedidos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.tablaPedidos.BackgroundColor = System.Drawing.SystemColors.InactiveCaption;
             this.tablaPedidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.tablaPedidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.producto,
@@ -63,11 +62,102 @@
             this.mesa,
             this.seccion,
             this.mozo});
-            this.tablaPedidos.Location = new System.Drawing.Point(10, 48);
+            this.tablaPedidos.Location = new System.Drawing.Point(63, 100);
+            this.tablaPedidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tablaPedidos.Name = "tablaPedidos";
             this.tablaPedidos.ReadOnly = true;
-            this.tablaPedidos.Size = new System.Drawing.Size(971, 433);
+            this.tablaPedidos.Size = new System.Drawing.Size(1017, 472);
             this.tablaPedidos.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(927, 658);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 17);
+            this.label1.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(967, 650);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 24);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Finalizar ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(967, 674);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(86, 24);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Pedidos";
+            // 
+            // btnFinalizarPedidos
+            // 
+            this.btnFinalizarPedidos.BackColor = System.Drawing.Color.Tan;
+            this.btnFinalizarPedidos.BackgroundImage = global::PatronState.Properties.Resources.detalle;
+            this.btnFinalizarPedidos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnFinalizarPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFinalizarPedidos.Location = new System.Drawing.Point(978, 578);
+            this.btnFinalizarPedidos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFinalizarPedidos.Name = "btnFinalizarPedidos";
+            this.btnFinalizarPedidos.Size = new System.Drawing.Size(75, 70);
+            this.btnFinalizarPedidos.TabIndex = 11;
+            this.btnFinalizarPedidos.UseVisualStyleBackColor = false;
+            this.btnFinalizarPedidos.Click += new System.EventHandler(this.btnFinalizarPedidos_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Tan;
+            this.button1.BackgroundImage = global::PatronState.Properties.Resources.salida;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button1.Location = new System.Drawing.Point(83, 578);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(69, 57);
+            this.button1.TabIndex = 15;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(92, 636);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(51, 24);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Salir";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox1.BackgroundImage")));
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.groupBox1.Location = new System.Drawing.Point(83, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(970, 75);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Corbel", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(22, 18);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(281, 41);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "Pedidos realizados";
             // 
             // producto
             // 
@@ -81,25 +171,28 @@
             this.menu.HeaderText = "Menu";
             this.menu.Name = "menu";
             this.menu.ReadOnly = true;
-            this.menu.Width = 250;
+            this.menu.Width = 75;
             // 
             // cantidad
             // 
             this.cantidad.HeaderText = "Cantidad";
             this.cantidad.Name = "cantidad";
             this.cantidad.ReadOnly = true;
+            this.cantidad.Width = 75;
             // 
             // mesa
             // 
             this.mesa.HeaderText = "Nro Mesa";
             this.mesa.Name = "mesa";
             this.mesa.ReadOnly = true;
+            this.mesa.Width = 75;
             // 
             // seccion
             // 
             this.seccion.HeaderText = "Seccion";
             this.seccion.Name = "seccion";
             this.seccion.ReadOnly = true;
+            this.seccion.Width = 75;
             // 
             // mozo
             // 
@@ -108,120 +201,29 @@
             this.mozo.ReadOnly = true;
             this.mozo.Width = 250;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asdToolStripMenuItem,
-            this.dsaToolStripMenuItem,
-            this.usuarioToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(963, 24);
-            this.menuStrip1.TabIndex = 9;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // asdToolStripMenuItem
-            // 
-            this.asdToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.asddasToolStripMenuItem});
-            this.asdToolStripMenuItem.Name = "asdToolStripMenuItem";
-            this.asdToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.asdToolStripMenuItem.Text = "Inicio";
-            // 
-            // asddasToolStripMenuItem
-            // 
-            this.asddasToolStripMenuItem.Name = "asddasToolStripMenuItem";
-            this.asddasToolStripMenuItem.Size = new System.Drawing.Size(110, 22);
-            this.asddasToolStripMenuItem.Text = "asddas";
-            // 
-            // dsaToolStripMenuItem
-            // 
-            this.dsaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pedidosToolStripMenuItem,
-            this.mesasToolStripMenuItem,
-            this.mozosToolStripMenuItem});
-            this.dsaToolStripMenuItem.Name = "dsaToolStripMenuItem";
-            this.dsaToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            this.dsaToolStripMenuItem.Text = "Restaurante";
-            // 
-            // pedidosToolStripMenuItem
-            // 
-            this.pedidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.finalizarPedidosToolStripMenuItem});
-            this.pedidosToolStripMenuItem.Name = "pedidosToolStripMenuItem";
-            this.pedidosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.pedidosToolStripMenuItem.Text = "Pedidos";
-            // 
-            // finalizarPedidosToolStripMenuItem
-            // 
-            this.finalizarPedidosToolStripMenuItem.Name = "finalizarPedidosToolStripMenuItem";
-            this.finalizarPedidosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.finalizarPedidosToolStripMenuItem.Text = "Finalizar pedidos";
-            // 
-            // mesasToolStripMenuItem
-            // 
-            this.mesasToolStripMenuItem.Name = "mesasToolStripMenuItem";
-            this.mesasToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mesasToolStripMenuItem.Text = "Mesas";
-            // 
-            // mozosToolStripMenuItem
-            // 
-            this.mozosToolStripMenuItem.Name = "mozosToolStripMenuItem";
-            this.mozosToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
-            this.mozosToolStripMenuItem.Text = "Mozos";
-            // 
-            // usuarioToolStripMenuItem
-            // 
-            this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
-            this.usuarioToolStripMenuItem.Text = "Usuario";
-            // 
-            // btnVolver
-            // 
-            this.btnVolver.BackColor = System.Drawing.Color.Tan;
-            this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(11, 495);
-            this.btnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(101, 42);
-            this.btnVolver.TabIndex = 10;
-            this.btnVolver.Text = "Volver a Inicio";
-            this.btnVolver.UseVisualStyleBackColor = false;
-            // 
-            // btnFinalizarPedidos
-            // 
-            this.btnFinalizarPedidos.BackColor = System.Drawing.Color.Tan;
-            this.btnFinalizarPedidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFinalizarPedidos.Location = new System.Drawing.Point(880, 495);
-            this.btnFinalizarPedidos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btnFinalizarPedidos.Name = "btnFinalizarPedidos";
-            this.btnFinalizarPedidos.Size = new System.Drawing.Size(101, 42);
-            this.btnFinalizarPedidos.TabIndex = 11;
-            this.btnFinalizarPedidos.Text = "Finalizar Pedidos";
-            this.btnFinalizarPedidos.UseVisualStyleBackColor = false;
-            this.btnFinalizarPedidos.Click += new System.EventHandler(this.btnFinalizarPedidos_Click);
-            // 
             // Pedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.BackgroundImage = global::PatronState.Properties.Resources.fondo2;
-            this.ClientSize = new System.Drawing.Size(963, 548);
+            this.ClientSize = new System.Drawing.Size(1124, 700);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnFinalizarPedidos);
-            this.Controls.Add(this.btnVolver);
-            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tablaPedidos);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Pedidos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedidos";
             this.Load += new System.EventHandler(this.Pedidos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.tablaPedidos)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,22 +232,19 @@
         #endregion
 
         private System.Windows.Forms.DataGridView tablaPedidos;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnFinalizarPedidos;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridViewTextBoxColumn producto;
         private System.Windows.Forms.DataGridViewTextBoxColumn menu;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn mesa;
         private System.Windows.Forms.DataGridViewTextBoxColumn seccion;
         private System.Windows.Forms.DataGridViewTextBoxColumn mozo;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem asdToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem asddasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dsaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem finalizarPedidosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mesasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mozosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuarioToolStripMenuItem;
-        private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button btnFinalizarPedidos;
     }
 }
