@@ -63,5 +63,10 @@ namespace PatronState.Formularios
                     
                 }
         }
+
+        private void btn_ActualizarPedido_Click(object sender, EventArgs e)
+        {
+            cargar_grilla();
+        }
     }
 }
