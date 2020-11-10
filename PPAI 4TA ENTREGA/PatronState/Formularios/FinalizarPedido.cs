@@ -14,6 +14,10 @@ namespace PatronState
 {
     public partial class FinalizarPedido : Form
     {
+
+        List<DetallePedido> listaDetallesEnPreparacion = new List<DetallePedido>();
+        List<DetallePedido> listaDetallesSeleccionados = new List<DetallePedido>();
+
         public FinalizarPedido()
         {
             InitializeComponent();
@@ -28,14 +32,17 @@ namespace PatronState
             for (int y = 0; y < pedido.Count(); y++)
                 for (int i = 0; i < pedido[y].Productos.Count; i++)
                 {
-                    tablaPedidos.Rows.Add();
-                    tablaPedidos.Rows[c].Cells[1].Value = pedido[y].Productos[i].NombreProducto;
-                    tablaPedidos.Rows[c].Cells[2].Value = pedido[y].Productos[i].EsMenu;
-                    tablaPedidos.Rows[c].Cells[3].Value = pedido[y].Productos[i].Cantidad;
-                    tablaPedidos.Rows[c].Cells[4].Value = pedido[y].Mesa.NumeroMesa;
-                    c += 1;
+                    if(pedido[y].Productos[i].EstadoActual is EnPreparacion)
+                    {
+                        listaDetallesEnPreparacion.Add(pedido[y].Productos[i]);
+                        tablaPedidos.Rows.Add();
+                        tablaPedidos.Rows[c].Cells[1].Value = pedido[y].Productos[i].NombreProducto;
+                        tablaPedidos.Rows[c].Cells[2].Value = pedido[y].Productos[i].EsMenu;
+                        tablaPedidos.Rows[c].Cells[3].Value = pedido[y].Productos[i].Cantidad;
+                        tablaPedidos.Rows[c].Cells[4].Value = pedido[y].Mesa.NumeroMesa;
+                        c += 1;
+                    }
                 }
-
         }
 
 
@@ -53,6 +60,18 @@ namespace PatronState
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
+
+            DataGridViewRowCollection filas = tablaPedidos.Rows;
+            for (int i = 0; i < filas.Count; i++)
+            {
+                CheckBox ck = (CheckBox)filas[i].Cells[0].Value;
+                if (ck.Checked)
+                {
+                    listaDetallesSeleccionados.Add(listaDetallesEnPreparacion[i]);
+                }
+            }
+
+
             ConfirmarFinalizacion frm_finalizar = new ConfirmarFinalizacion();
             frm_finalizar.Show();
             
