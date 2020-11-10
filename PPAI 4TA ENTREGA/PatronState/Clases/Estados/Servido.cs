@@ -42,11 +42,6 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override HistorialEstado crearHistorialEstado()
-        {
-            throw new NotImplementedException();
-        }
-
         public override Estado crearProximoEstado()
         {
             throw new NotImplementedException();
@@ -77,12 +72,12 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void finalizarPreparacion()
+        public override void finalizarPreparacion(DateTime fechaHoraActual, DetallePedido detalle)
         {
             throw new NotImplementedException();
         }
 
-        public override void notificar()
+        public override void notificar(DateTime fechaHoraActual, DetallePedido detalle)
         {
             throw new NotImplementedException();
         }

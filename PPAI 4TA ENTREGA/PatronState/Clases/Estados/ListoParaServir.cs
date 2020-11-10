@@ -20,12 +20,6 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override HistorialEstado crearHistorialEstado(DateTime fechaInicio)
-        {
-            HistorialEstado nuevo = new HistorialEstado(fechaInicio, this);
-            return nuevo;
-        }
-
         public override Estado crearProximoEstado()
         {
             Estado estadoNuevo = new Notificado();
@@ -88,7 +82,7 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void finalizarPreparacion()
+        public override void finalizarPreparacion(DateTime fechaHoraActual, DetallePedido detalle)
         {
             throw new NotImplementedException();
         }

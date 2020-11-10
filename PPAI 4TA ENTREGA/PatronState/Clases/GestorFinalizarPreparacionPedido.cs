@@ -8,13 +8,28 @@ namespace PatronState.Clases
 {
     class GestorFinalizarPreparacionPedido
     {
-        List<DetallePedido> detalleDePedidoSeleccionado;
+
+        DateTime fechaHoraActual;
+        List<DetallePedido> detallePedidoSeleccionado;
+
+        GestorFinalizarPreparacionPedido()
+        {
+            fechaHoraActual = DateTime.Now;
+        }
 
         public void actualizarEstadoAListoParaServir()
         {
-            foreach (DetallePedido dp in detalleDePedidoSeleccionado)
+            foreach (DetallePedido dp in detallePedidoSeleccionado)
             {
-                
+                dp.finalizarPreparacion(fechaHoraActual);
+            }
+        }
+
+        public void actualizarEstadoNotificado()
+        {
+            foreach (DetallePedido dp in detallePedidoSeleccionado)
+            {
+                dp.notificar(fechaHoraActual);
             }
         }
 

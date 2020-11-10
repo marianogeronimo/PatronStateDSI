@@ -50,5 +50,10 @@ namespace PatronState.Clases
         {
             estadoActual = estado;
         } 
+
+        public void notificar(DateTime fechaHoraActual)
+        {
+            estadoActual.notificar(fechaHoraActual, this);
+        }
     }
 }

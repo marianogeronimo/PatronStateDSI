@@ -20,11 +20,6 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override HistorialEstado crearHistorialEstado()
-        {
-            throw new NotImplementedException();
-        }
-
         public override Estado crearProximoEstado()
         {
             Estado estadoNuevo = new ListoParaServir();
@@ -36,9 +31,13 @@ namespace PatronState.Clases
             return true;
         }
         
-        public override void finalizarPreparacion()
+        public override void finalizarPreparacion(DateTime fechaHoraActual, DetallePedido detalle)
         {
-            
+            historialReferenciado.setFechaFinEstado(fechaHoraActual);
+            Estado nuevoEstado = crearProximoEstado();
+            HistorialEstado nuevoHistorial = crearHistorialEstado(fechaHoraActual);
+            detalle.agregarHistorial(nuevoHistorial);
+            detalle.setEstadoActual(nuevoEstado);
         }
 
         public override string getAmbito()
@@ -83,7 +82,7 @@ namespace PatronState.Clases
             throw new NotImplementedException();
         }
 
-        public override void notificar()
+        public override void notificar(DateTime fechaHoraActual, DetallePedido detalle)
         {
             throw new NotImplementedException();
         }
