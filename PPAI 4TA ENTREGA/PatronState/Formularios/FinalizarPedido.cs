@@ -35,6 +35,7 @@ namespace PatronState
                     {
                         listaDetallesEnPreparacion.Add(pedido[y].Productos[i]);
                         tablaPedidos.Rows.Add();
+                        tablaPedidos.Rows[c].Cells[0].Value = false;
                         tablaPedidos.Rows[c].Cells[1].Value = pedido[y].Productos[i].NombreProducto;
                         tablaPedidos.Rows[c].Cells[2].Value = pedido[y].Productos[i].EsMenu;
                         tablaPedidos.Rows[c].Cells[3].Value = pedido[y].Productos[i].Cantidad;
